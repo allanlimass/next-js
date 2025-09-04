@@ -3,6 +3,21 @@
 import Header from "@/components/Header"
 import { useState } from "react"
 
+const courses = [
+    "HTML",
+    "React",
+    "C++",
+    "JavaScript",
+    "Arduino",
+    "CSS",
+    "Next.js",
+    "Node.js"
+]
+
+const getCourses = courses.map(course => {
+    return <option key={course} value={course}>{course}</option>
+})
+
 export default function Inputs() {
     const [name, setName] = useState<string>('')
     const [email, setEmail] = useState<string>('')
@@ -47,14 +62,7 @@ export default function Inputs() {
                         onChange={(e) => setCourse(e.target.value)} 
                         value={course}
                     >
-                        <option value="HTML">HTML</option>
-                        <option value="React">React</option>
-                        <option value="C++">C++</option>
-                        <option value="JavaScript">JavaScript</option>
-                        <option value="Arduino">Arduino</option>
-                        <option value="CSS">CSS</option>
-                        <option value="Next.js">Next.js</option>
-                        <option value="Node.js">Node.js</option>
+                        {getCourses}
                     </select>
                 </div>
             </div>
