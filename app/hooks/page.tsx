@@ -23,11 +23,7 @@ export default function UseState() {
         <div>
             <Header/>
             <h1>useState</h1>
-            <ShowState amount={count}></ShowState>
-            <div className="flex gap-2 mt-2">
-                <button onClick={sum}>+ Adicionar</button>
-                <button onClick={sub}>- Subtrair</button>
-            </div>
+            <ShowState amount={count} sum={sum} sub={sub}></ShowState>
         </div>
     )
 }

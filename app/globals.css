@@ -25,6 +25,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
 button {
   background-color: var(--foreground);
   color: var(--background);
