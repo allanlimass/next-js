@@ -1,5 +1,6 @@
 'use client'
 
+import Header from "@/components/Header"
 import { useState } from "react"
 
 export default function UseState() {
@@ -13,6 +14,7 @@ export default function UseState() {
 
     return (
         <div>
+            <Header/>
             <h1>useState</h1>
             <div>{count}</div>
             <button onClick={counter}>Adicionar</button>
