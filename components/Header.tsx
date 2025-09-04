@@ -13,6 +13,7 @@ export default function Header() {
             }}>Produtos</Link>
             <Link href={"/orders"}>Ordens</Link>
             <Link href={"/hooks"}>Hooks</Link>
+            <Link href={"/inputs"}>Inputs</Link>
         </nav>
     )
 }
