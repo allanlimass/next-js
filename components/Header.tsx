@@ -14,6 +14,7 @@ export default function Header() {
             <Link href={"/orders"}>Ordens</Link>
             <Link href={"/hooks"}>Hooks</Link>
             <Link href={"/inputs"}>Inputs</Link>
+            <Link href={"/useeffect"}>UseEffect</Link>
         </nav>
     )
 }
